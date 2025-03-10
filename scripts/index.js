@@ -342,3 +342,195 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
         setTimeout(() => notification.remove(), 300);
     }, 3000);
 });
+
+
+// Script for Services
+const services = [
+    {
+        title: "Technical SEO",
+        description: "Comprehensive technical optimization to improve search engine crawlability and indexing. We ensure your website meets all technical requirements for optimal performance.",
+        features: [
+            "Site Architecture Optimization",
+            "Core Web Vitals Enhancement",
+            "Mobile Optimization",
+            "Schema Markup Implementation",
+            "Site Speed Optimization"
+        ],
+        benefits: [
+            "Improved Search Rankings",
+            "Better User Experience",
+            "Increased Crawl Efficiency",
+            "Enhanced Site Performance"
+        ],
+        image: "https://public.readdy.ai/ai/img_res/2037befd6bc6505408645c134ce8af85.jpg"
+    },
+    {
+        title: "Content Strategy",
+        description: "Data-driven content strategy to attract and engage your target audience. We create content that resonates with your users and ranks well in search engines.",
+        features: [
+            "Keyword Research & Analysis",
+            "Content Calendar Planning",
+            "Content Optimization",
+            "Topic Cluster Creation",
+            "Content Performance Tracking"
+        ],
+        benefits: [
+            "Increased Organic Traffic",
+            "Higher Engagement Rates",
+            "Improved Conversions",
+            "Better Brand Authority"
+        ],
+        image: "https://public.readdy.ai/ai/img_res/6e1e6f0128a5c2e31fe3a7040227e575.jpg"
+    },
+    {
+        title: "Analytics & Reporting",
+        description: "Comprehensive analytics and reporting to track your SEO performance and demonstrate ROI from your digital marketing initiatives.",
+        features: [
+            "Custom Dashboard Creation",
+            "KPI Tracking & Analysis",
+            "ROI Measurement",
+            "Competitor Analysis",
+            "Monthly Performance Reports"
+        ],
+        benefits: [
+            "Data-Driven Decisions",
+            "Clear Performance Metrics",
+            "Competitive Insights",
+            "Actionable Recommendations"
+        ],
+        image: "https://public.readdy.ai/ai/img_res/a0911ca63dc36653c3b6c3b8608e621b.jpg"
+    }
+];
+function showServiceDetails(index) {
+    const service = services[index];
+    const content = `
+<div class="space-y-6">
+<img src="${service.image}" alt="${service.title}" class="w-full h-64 object-cover rounded-lg mb-6">
+<div class="flex items-center justify-between">
+<h3 class="text-2xl font-bold">${service.title}</h3>
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full text-primary">
+<i class="ri-${index === 0 ? 'code' : index === 1 ? 'article' : 'line-chart'}-line ri-xl"></i>
+</div>
+</div>
+<p class="text-gray-600">${service.description}</p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<h4 class="font-semibold mb-4">Key Features</h4>
+<ul class="space-y-2">
+${service.features.map(feature => `
+<li class="flex items-center gap-2 text-gray-600">
+<i class="ri-check-line text-primary"></i>
+<span>${feature}</span>
+</li>
+`).join('')}
+</ul>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Benefits</h4>
+<ul class="space-y-2">
+${service.benefits.map(benefit => `
+<li class="flex items-center gap-2 text-gray-600">
+<i class="ri-arrow-right-line text-primary"></i>
+<span>${benefit}</span>
+</li>
+`).join('')}
+</ul>
+</div>
+</div>
+<div class="mt-8">
+<button onclick="closeServiceModal()" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors">Get Started</button>
+</div>
+</div>
+`;
+    document.getElementById('serviceContent').innerHTML = content;
+    document.getElementById('serviceModal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+function closeServiceModal() {
+    document.getElementById('serviceModal').classList.add('hidden');
+    document.body.style.overflow = 'auto';
+}
+document.getElementById('serviceModal').addEventListener('click', function (e) {
+    if (e.target === this) {
+        closeServiceModal();
+    }
+});
+
+
+// Script for Acievements
+
+const certificates = [
+    {
+        title: "Google SEO Certification",
+        issuer: "Google",
+        date: "January 2025",
+        description: "Advanced certification in Search Engine Optimization covering technical SEO, content optimization, and search analytics.",
+        skills: ["Technical SEO", "Content Strategy", "Search Analytics", "Mobile Optimization"],
+        projects: "Led 15+ successful SEO campaigns with average traffic increase of 200%",
+        image: "https://public.readdy.ai/ai/img_res/18b5b9cf86296c0e38ab39134e520872.jpg"
+    },
+    {
+        title: "HubSpot Advanced",
+        issuer: "HubSpot Academy",
+        date: "March 2025",
+        description: "Comprehensive certification in digital marketing excellence, focusing on inbound methodology and content marketing.",
+        skills: ["Inbound Marketing", "Content Strategy", "Lead Generation", "Marketing Automation"],
+        projects: "Implemented successful marketing campaigns for 20+ enterprise clients",
+        image: "https://public.readdy.ai/ai/img_res/c86cb06a46d8754d35dae3c6e3f44046.jpg"
+    },
+    {
+        title: "Analytics Master",
+        issuer: "Analytics Academy",
+        date: "February 2025",
+        description: "Advanced certification in data analytics and visualization, focusing on actionable insights and reporting.",
+        skills: ["Data Analysis", "Visualization", "Reporting", "Predictive Analytics"],
+        projects: "Developed analytics frameworks for 25+ high-traffic websites",
+        image: "https://public.readdy.ai/ai/img_res/3d32f95cc407209797156c93a92c4f85.jpg"
+    }
+];
+function showCertificateDetails(index) {
+    const cert = certificates[index];
+    const content = `
+<div class="space-y-6">
+<img src="${cert.image}" alt="${cert.title}" class="w-full h-64 object-cover rounded-lg mb-6">
+<div class="flex items-center justify-between">
+<h3 class="text-2xl font-bold">${cert.title}</h3>
+<div class="flex items-center gap-2">
+<i class="ri-verified-badge-fill text-primary ri-lg"></i>
+<span class="text-gray-600">${cert.issuer}</span>
+</div>
+</div>
+<p class="text-gray-600">${cert.description}</p>
+<div class="space-y-4">
+<div>
+<h4 class="font-semibold mb-2">Key Skills</h4>
+<div class="flex flex-wrap gap-2">
+${cert.skills.map(skill => `
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">${skill}</span>
+`).join('')}
+</div>
+</div>
+<div>
+<h4 class="font-semibold mb-2">Project Experience</h4>
+<p class="text-gray-600">${cert.projects}</p>
+</div>
+<div class="flex items-center text-sm text-gray-500">
+<i class="ri-calendar-line mr-2"></i>
+<span>Achieved: ${cert.date}</span>
+</div>
+</div>
+</div>
+`;
+    document.getElementById('certificateContent').innerHTML = content;
+    document.getElementById('certificateModal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+function closeCertificateModal() {
+    document.getElementById('certificateModal').classList.add('hidden');
+    document.body.style.overflow = 'auto';
+}
+document.getElementById('certificateModal').addEventListener('click', function (e) {
+    if (e.target === this) {
+        closeCertificateModal();
+    }
+});

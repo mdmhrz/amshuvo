@@ -1,891 +1,1033 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Anderson - SEO Expert & Digital Marketing Specialist</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
-    <style>
-        :where([class^="ri-"])::before {
-            content: "\f3c2";
-        }
-
-        .testimonial-slider {
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .nav-link.active {
-            color: #3B82F6;
-            font-weight: 600;
-        }
-
-        .service-card:hover {
-            transform: translateY(-8px);
-            transition: transform 0.3s ease;
-        }
-
-        @keyframes pulse {
-
-            0%,
-            100% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0.7;
-            }
-        }
-
-        .animate-pulse {
-            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-        }
-
-        .bg-grid-slate-100 {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath fill='%23f1f5f9' d='M1 1h2v2H1V1zm4 0h2v2H5V1zm4 0h2v2H9V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm-16 4h2v2H1V5zm4 0h2v2H5V5zm4 0h2v2H9V5zm4 0h2v2h-2V5zm4 0h2v2h-2V5zm-16 4h2v2H1V9zm4 0h2v2H5V9zm4 0h2v2H9V9zm4 0h2v2h-2V9zm4 0h2v2h-2V9zm-16 4h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm-16 4h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2z'/%3E%3C/svg%3E");
-        }
-    </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#6b21a8',
-                        secondary: '#9333ea'
-                    },
-                    borderRadius: {
-                        'none': '0px',
-                        'sm': '4px',
-                        DEFAULT: '8px',
-                        'md': '12px',
-                        'lg': '16px',
-                        'xl': '20px',
-                        '2xl': '24px',
-                        '3xl': '32px',
-                        'full': '9999px',
-                        'button': '8px'
-                    }
-                }
-            }
-        }
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>John Anderson - SEO Expert & Digital Marketing Specialist</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.testimonial-slider {
+transition: transform 0.3s ease-in-out;
+}
+.nav-link.active {
+color: #3B82F6;
+font-weight: 600;
+}
+.service-card:hover {
+transform: translateY(-8px);
+transition: transform 0.3s ease;
+}
+@keyframes pulse {
+0%, 100% { opacity: 1; }
+50% { opacity: 0.7; }
+}
+.animate-pulse {
+animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.bg-grid-slate-100 {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath fill='%23f1f5f9' d='M1 1h2v2H1V1zm4 0h2v2H5V1zm4 0h2v2H9V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm-16 4h2v2H1V5zm4 0h2v2H5V5zm4 0h2v2H9V5zm4 0h2v2h-2V5zm4 0h2v2h-2V5zm-16 4h2v2H1V9zm4 0h2v2H5V9zm4 0h2v2H9V9zm4 0h2v2h-2V9zm4 0h2v2h-2V9zm-16 4h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm-16 4h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2z'/%3E%3C/svg%3E");
+}
+</style>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#6b21a8',
+secondary: '#9333ea'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
 </head>
-
 <body class="font-['Inter'] bg-white">
-    <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
-        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="#" class="text-2xl font-['Pacifico'] text-primary">logo</a>
-            <div class="flex items-center gap-8">
-                <a href="#portfolio" class="nav-link hover:text-primary transition-colors">Portfolio</a>
-                <a href="#expertise" class="nav-link hover:text-primary transition-colors">Expertise</a>
-                <a href="#services" class="nav-link hover:text-primary transition-colors">Services</a>
-                <a href="#blog" class="nav-link hover:text-primary transition-colors">Blog</a>
-                <a href="#contact" class="nav-link hover:text-primary transition-colors">Contact</a>
-                <button
-                    class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap cursor-pointer">Hire
-                    Me</button>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="pt-32 pb-20 relative overflow-hidden bg-gradient-to-br from-purple-50 to-fuchsia-50">
-            <div class="absolute inset-0">
-                <div class="absolute inset-0 bg-grid-slate-100 opacity-50"></div>
-                <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5"></div>
-                <div class="absolute w-96 h-96 -top-48 -left-48 bg-purple-500/30 rounded-full blur-3xl animate-pulse">
-                </div>
-                <div class="absolute w-96 h-96 -bottom-48 -right-48 bg-fuchsia-500/30 rounded-full blur-3xl animate-pulse"
-                    style="animation-delay: 1s;"></div>
-            </div>
-            <div class="container mx-auto px-6 relative">
-                <div class="max-w-4xl mx-auto text-center space-y-8">
-                    <div
-                        class="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-gray-600 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
-                        <i class="ri-rocket-line animate-bounce"></i>
-                        <span class="text-sm font-medium">Ranked #1 SEO Expert in 2025</span>
-                    </div>
-                    <h1
-                        class="text-6xl font-bold leading-tight bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                        Transform Your Digital Presence with AI-Powered SEO
-                    </h1>
-                    <p class="text-gray-600 text-xl leading-relaxed">
-                        Leveraging cutting-edge AI and data analytics to deliver exceptional SEO results. With 200+
-                        success stories and counting, we're ready to take your business to new heights.
-                    </p>
-                    <div class="flex justify-center gap-8">
-                        <div
-                            class="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer">
-                            <div
-                                class="text-4xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform">
-                                200+</div>
-                            <div class="text-gray-600">Clients Served</div>
-                        </div>
-                        <div
-                            class="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer">
-                            <div
-                                class="text-4xl font-bold text-secondary mb-2 group-hover:scale-110 transition-transform">
-                                95%</div>
-                            <div class="text-gray-600">Success Rate</div>
-                        </div>
-                    </div>
-                    <div class="flex justify-center gap-4">
-                        <button
-                            class="group bg-primary text-white px-8 py-4 !rounded-button hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/25 hover:-translate-y-1 whitespace-nowrap cursor-pointer">
-                            <span class="flex items-center gap-2">
-                                Start Your Journey
-                                <i class="ri-arrow-right-line transition-transform group-hover:translate-x-1"></i>
-                            </span>
-                        </button>
-                        <button
-                            class="group bg-white/80 backdrop-blur-sm text-primary px-8 py-4 !rounded-button hover:bg-white transition-all duration-300 shadow-lg hover:shadow-primary/25 hover:-translate-y-1 whitespace-nowrap cursor-pointer">
-                            <span class="flex items-center gap-2" onclick="openDemoModal()">
-                                Watch Demo
-                                <i class="ri-play-circle-line transition-transform group-hover:translate-x-1"></i>
-                            </span>
-                            <div id="demoModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden">
-                                <div
-                                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] bg-white rounded-xl shadow-2xl">
-                                    <div class="relative">
-                                        <button onclick="closeDemoModal()"
-                                            class="absolute -top-3 -right-3 w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-lg hover:bg-gray-50 transition-colors z-10">
-                                            <i class="ri-close-line ri-lg"></i>
-                                        </button>
-                                        <div class="aspect-video rounded-t-xl overflow-hidden">
-                                            <iframe width="100%" height="100%"
-                                                src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                allowfullscreen></iframe>
-                                        </div>
-                                        <div class="p-6">
-                                            <h3 class="text-xl font-semibold mb-2">SEO Success Stories & Methodology
-                                            </h3>
-                                            <p class="text-gray-600">Watch how we've helped businesses achieve
-                                                remarkable growth through our proven SEO strategies and methodologies.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <script>
-                                function openDemoModal() {
-                                    document.getElementById('demoModal').classList.remove('hidden');
-                                    document.body.style.overflow = 'hidden';
-                                }
-                                function closeDemoModal() {
-                                    document.getElementById('demoModal').classList.add('hidden');
-                                    document.body.style.overflow = 'auto';
-                                }
-                                document.getElementById('demoModal').addEventListener('click', function (e) {
-                                    if (e.target === this) {
-                                        closeDemoModal();
-                                    }
-                                });
-                            </script>
-                        </button>
-                    </div>
-                    <div class="pt-12 flex justify-center">
-                        <div
-                            class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-6 inline-flex items-center gap-6">
-                            <div class="flex -space-x-4">
-                                <img src="https://public.readdy.ai/ai/img_res/124e9dc88d5db66c34ef033b9d16cc09.jpg"
-                                    class="w-12 h-12 rounded-full border-2 border-white" alt="Client">
-                                <img src="https://public.readdy.ai/ai/img_res/7609898f3dcf97e0e0433686bd4e7d8c.jpg"
-                                    class="w-12 h-12 rounded-full border-2 border-white" alt="Client">
-                                <img src="https://public.readdy.ai/ai/img_res/827d315937a3801366c76383db152df8.jpg"
-                                    class="w-12 h-12 rounded-full border-2 border-white" alt="Client">
-                            </div>
-                            <div class="text-sm">
-                                <div class="font-semibold text-gray-900">Trusted by Industry Leaders</div>
-                                <div class="text-gray-600">Join our growing community of success</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="portfolio" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold mb-4">Featured Projects</h2>
-                    <p class="text-gray-600 max-w-2xl mx-auto">Explore some of my most successful SEO and digital
-                        marketing campaigns that have delivered exceptional results for clients across various
-                        industries.</p>
-                </div>
-                <div class="flex gap-4 mb-8 justify-center">
-                    <button
-                        class="px-6 py-2 !rounded-button bg-primary text-white hover:bg-primary/90 transition-colors whitespace-nowrap cursor-pointer">All
-                        Projects</button>
-                    <button
-                        class="px-6 py-2 !rounded-button bg-gray-100 hover:bg-gray-200 transition-colors whitespace-nowrap cursor-pointer">E-commerce</button>
-                    <button
-                        class="px-6 py-2 !rounded-button bg-gray-100 hover:bg-gray-200 transition-colors whitespace-nowrap cursor-pointer">SaaS</button>
-                    <button
-                        class="px-6 py-2 !rounded-button bg-gray-100 hover:bg-gray-200 transition-colors whitespace-nowrap cursor-pointer">Local
-                        SEO</button>
-                </div>
-                <div class="grid grid-cols-3 gap-8">
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
-                        <img src="https://public.readdy.ai/ai/img_res/84a946211aa9bec3eeadb362efb6b43c.jpg"
-                            alt="E-commerce SEO Project" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">Global E-commerce Platform Optimization</h3>
-                            <p class="text-gray-600 mb-4">Increased organic traffic by 156% and conversion rates by 42%
-                                through comprehensive technical SEO and content strategy.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Technical
-                                    SEO</span>
-                                <span class="px-3 py-1 bg-fuchsia-100 text-fuchsia-800 rounded-full text-sm">Content
-                                    Strategy</span>
-                                <span
-                                    class="px-3 py-1 bg-violet-100 text-violet-800 rounded-full text-sm">E-commerce</span>
-                            </div>
-                            <a href="#"
-                                class="text-primary font-medium hover:text-primary/80 transition-colors cursor-pointer">View
-                                Case Study →</a>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
-                        <img src="https://public.readdy.ai/ai/img_res/84edb5200381c83b0edb48eba7943601.jpg"
-                            alt="SaaS SEO Project" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">SaaS Company Market Expansion</h3>
-                            <p class="text-gray-600 mb-4">Achieved 200% growth in qualified leads through targeted
-                                keyword strategy and conversion rate optimization.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">SaaS SEO</span>
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Lead
-                                    Generation</span>
-                                <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">CRO</span>
-                            </div>
-                            <a href="#"
-                                class="text-primary font-medium hover:text-primary/80 transition-colors cursor-pointer">View
-                                Case Study →</a>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
-                        <img src="https://public.readdy.ai/ai/img_res/929475b14e5341ebfcdc52f54afb4ef1.jpg"
-                            alt="Local SEO Project" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">Multi-Location Restaurant Chain SEO</h3>
-                            <p class="text-gray-600 mb-4">Boosted local search visibility by 85% and increased foot
-                                traffic across 25 locations nationwide.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Local SEO</span>
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">GMB
-                                    Optimization</span>
-                                <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Local
-                                    Citations</span>
-                            </div>
-                            <a href="#"
-                                class="text-primary font-medium hover:text-primary/80 transition-colors cursor-pointer">View
-                                Case Study →</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-12">
-                    <button
-                        class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap cursor-pointer">View
-                        All Projects</button>
-                </div>
-            </div>
-        </section>
-        <section id="expertise" class="py-20 bg-[#fafafa]">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold mb-4">Areas of Expertise</h2>
-                    <p class="text-gray-600 max-w-2xl mx-auto">Leveraging years of experience and continuous learning to
-                        deliver comprehensive SEO solutions that drive real business results.</p>
-                </div>
-                <div class="grid grid-cols-3 gap-8">
-                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                        <div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-lg mb-6">
-                            <i class="ri-search-line ri-2x text-primary"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-4">Technical SEO</h3>
-                        <p class="text-gray-600 mb-4">Expert in website architecture, crawlability optimization, and
-                            resolving technical barriers to improve search engine performance.</p>
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm text-gray-600">Site Architecture</span>
-                                <div class="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="w-[95%] h-full bg-primary"></div>
-                                </div>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm text-gray-600">Core Web Vitals</span>
-                                <div class="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="w-[90%] h-full bg-primary"></div>
-                                </div>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm text-gray-600">Mobile Optimization</span>
-                                <div class="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="w-[85%] h-full bg-primary"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                        <div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-lg mb-6">
-                            <i class="ri-article-line ri-2x text-secondary"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-4">Content Strategy</h3>
-                        <p class="text-gray-600 mb-4">Creating data-driven content strategies that align with search
-                            intent and drive organic traffic growth.</p>
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm text-gray-600">Keyword Research</span>
-                                <div class="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="w-[92%] h-full bg-secondary"></div>
-                                </div>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm text-gray-600">Content Planning</span>
-                                <div class="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="w-[88%] h-full bg-secondary"></div>
-                                </div>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm text-gray-600">Content Optimization</span>
-                                <div class="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="w-[85%] h-full bg-secondary"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                        <div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-lg mb-6">
-                            <i class="ri-line-chart-line ri-2x text-primary"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-4">Analytics & Reporting</h3>
-                        <p class="text-gray-600 mb-4">Advanced data analysis and reporting to track KPIs and demonstrate
-                            clear ROI from SEO initiatives.</p>
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm text-gray-600">Google Analytics</span>
-                                <div class="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="w-[94%] h-full bg-primary"></div>
-                                </div>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm text-gray-600">Data Analysis</span>
-                                <div class="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="w-[89%] h-full bg-primary"></div>
-                                </div>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm text-gray-600">ROI Tracking</span>
-                                <div class="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="w-[87%] h-full bg-primary"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="services" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold mb-4">Services Offered</h2>
-                    <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive SEO solutions tailored to your business
-                        needs and goals.</p>
-                </div>
-                <div class="grid grid-cols-4 gap-8">
-                    <div class="service-card bg-white p-6 rounded-lg shadow-lg">
-                        <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-4">
-                            <i class="ri-search-line ri-xl text-primary"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Technical SEO Audit</h3>
-                        <p class="text-gray-600 mb-4">Comprehensive analysis of your website's technical health and
-                            search engine accessibility.</p>
-                        <a href="#"
-                            class="text-primary font-medium hover:text-primary/80 transition-colors cursor-pointer">Learn
-                            More →</a>
-                    </div>
-                    <div class="service-card bg-white p-6 rounded-lg shadow-lg">
-                        <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-4">
-                            <i class="ri-article-line ri-xl text-secondary"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Content Strategy</h3>
-                        <p class="text-gray-600 mb-4">Data-driven content planning and creation to attract and engage
-                            your target audience.</p>
-                        <a href="#"
-                            class="text-primary font-medium hover:text-primary/80 transition-colors cursor-pointer">Learn
-                            More →</a>
-                    </div>
-                    <div class="service-card bg-white p-6 rounded-lg shadow-lg">
-                        <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-4">
-                            <i class="ri-global-line ri-xl text-primary"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Local SEO</h3>
-                        <p class="text-gray-600 mb-4">Boost your local search presence and attract more customers in
-                            your area.</p>
-                        <a href="#"
-                            class="text-primary font-medium hover:text-primary/80 transition-colors cursor-pointer">Learn
-                            More →</a>
-                    </div>
-                    <div class="service-card bg-white p-6 rounded-lg shadow-lg">
-                        <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-lg mb-4">
-                            <i class="ri-line-chart-line ri-xl text-secondary"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">SEO Consulting</h3>
-                        <p class="text-gray-600 mb-4">Strategic guidance and recommendations to improve your search
-                            performance.</p>
-                        <a href="#"
-                            class="text-primary font-medium hover:text-primary/80 transition-colors cursor-pointer">Learn
-                            More →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="py-20 bg-[#fafafa]">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold mb-4">Client Testimonials</h2>
-                    <p class="text-gray-600 max-w-2xl mx-auto">Here's what some of my clients have to say about working
-                        together.</p>
-                </div>
-                <div class="relative">
-                    <div class="overflow-hidden">
-                        <div class="testimonial-slider flex transition-transform duration-300" id="testimonialSlider">
-                            <div class="w-1/3 flex-shrink-0 px-4">
-                                <div class="bg-white p-6 rounded-lg shadow-lg">
-                                    <div class="flex items-center mb-4">
-                                        <img src="https://public.readdy.ai/ai/img_res/51ef47369af319bd3bba27fea6bec05c.jpg"
-                                            alt="Sarah Johnson" class="w-12 h-12 rounded-full object-cover">
-                                        <div class="ml-4">
-                                            <h4 class="font-semibold">Sarah Johnson</h4>
-                                            <p class="text-sm text-gray-600">Marketing Director, TechCorp</p>
-                                        </div>
-                                    </div>
-                                    <p class="text-gray-600">"The SEO results exceeded our expectations. Our organic
-                                        traffic increased by 200% within 6 months, leading to a significant boost in
-                                        qualified leads."</p>
-                                </div>
-                            </div>
-                            <div class="w-1/3 flex-shrink-0 px-4">
-                                <div class="bg-white p-6 rounded-lg shadow-lg">
-                                    <div class="flex items-center mb-4">
-                                        <img src="https://public.readdy.ai/ai/img_res/d2169ff06e3d8866f0ef931ee8898e1d.jpg"
-                                            alt="Michael Chen" class="w-12 h-12 rounded-full object-cover">
-                                        <div class="ml-4">
-                                            <h4 class="font-semibold">Michael Chen</h4>
-                                            <p class="text-sm text-gray-600">CEO, GrowthStart</p>
-                                        </div>
-                                    </div>
-                                    <p class="text-gray-600">"Working with this SEO expert has transformed our online
-                                        presence. The strategic approach and attention to detail were impressive."</p>
-                                </div>
-                            </div>
-                            <div class="w-1/3 flex-shrink-0 px-4">
-                                <div class="bg-white p-6 rounded-lg shadow-lg">
-                                    <div class="flex items-center mb-4">
-                                        <img src="https://public.readdy.ai/ai/img_res/a458f2cb6b00120044045b3c3a4b3591.jpg"
-                                            alt="Emily Rodriguez" class="w-12 h-12 rounded-full object-cover">
-                                        <div class="ml-4">
-                                            <h4 class="font-semibold">Emily Rodriguez</h4>
-                                            <p class="text-sm text-gray-600">Founder, Digital First</p>
-                                        </div>
-                                    </div>
-                                    <p class="text-gray-600">"The local SEO campaign delivered amazing results for our
-                                        multi-location business. We've seen a 150% increase in local search visibility."
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button
-                        class="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-lg hover:bg-gray-50 transition-colors cursor-pointer"
-                        onclick="moveTestimonials('prev')">
-                        <i class="ri-arrow-left-s-line ri-xl"></i>
-                    </button>
-                    <button
-                        class="absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-lg hover:bg-gray-50 transition-colors cursor-pointer"
-                        onclick="moveTestimonials('next')">
-                        <i class="ri-arrow-right-s-line ri-xl"></i>
-                    </button>
-                </div>
-            </div>
-        </section>
-        <section id="blog" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold mb-4">Latest Blog Posts</h2>
-                    <p class="text-gray-600 max-w-2xl mx-auto">Stay updated with the latest SEO trends, tips, and
-                        strategies.</p>
-                </div>
-                <div class="grid grid-cols-3 gap-8">
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img src="https://public.readdy.ai/ai/img_res/52799a1008f4024829c0fad05ebe6483.jpg"
-                            alt="SEO Trends 2025" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <div class="flex items-center text-sm text-gray-500 mb-2">
-                                <i class="ri-calendar-line mr-2"></i>
-                                <span>March 8, 2025</span>
-                            </div>
-                            <h3 class="text-xl font-semibold mb-2">Top SEO Trends to Watch in 2025</h3>
-                            <p class="text-gray-600 mb-4">Explore the latest SEO trends and strategies that will shape
-                                the digital landscape in 2025.</p>
-                            <a href="#"
-                                class="text-primary font-medium hover:text-primary/80 transition-colors cursor-pointer">Read
-                                More →</a>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img src="https://public.readdy.ai/ai/img_res/9a7e364824f29c359a38784ed998ae13.jpg"
-                            alt="Technical SEO Guide" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <div class="flex items-center text-sm text-gray-500 mb-2">
-                                <i class="ri-calendar-line mr-2"></i>
-                                <span>March 5, 2025</span>
-                            </div>
-                            <h3 class="text-xl font-semibold mb-2">Complete Technical SEO Audit Guide</h3>
-                            <p class="text-gray-600 mb-4">Learn how to conduct a comprehensive technical SEO audit to
-                                improve your website's performance.</p>
-                            <a href="#"
-                                class="text-primary font-medium hover:text-primary/80 transition-colors cursor-pointer">Read
-                                More →</a>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img src="https://public.readdy.ai/ai/img_res/6abf88e10760a0e4c5c28332cdb35da9.jpg"
-                            alt="Content Strategy" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <div class="flex items-center text-sm text-gray-500 mb-2">
-                                <i class="ri-calendar-line mr-2"></i>
-                                <span>March 1, 2025</span>
-                            </div>
-                            <h3 class="text-xl font-semibold mb-2">Building an Effective Content Strategy</h3>
-                            <p class="text-gray-600 mb-4">Discover the key elements of a successful content strategy
-                                that drives organic traffic.</p>
-                            <a href="#"
-                                class="text-primary font-medium hover:text-primary/80 transition-colors cursor-pointer">Read
-                                More →</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-12">
-                    <button
-                        class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap cursor-pointer">View
-                        All Posts</button>
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="py-20 bg-[#fafafa]">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
-                    <p class="text-gray-600 max-w-2xl mx-auto">Ready to improve your search rankings? Let's discuss how
-                        I can help your business grow.</p>
-                </div>
-                <div class="grid grid-cols-2 gap-12">
-                    <div class="bg-white p-8 rounded-lg shadow-lg">
-                        <form id="contactForm" class="space-y-6">
-                            <div>
-                                <label class="block text-sm font-medium text-gray -700 mb-2" for="name">Name</label>
-                                <input type="text" id="name" name="name"
-                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
-                                    placeholder="Your name">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2" for="email">Email</label>
-                                <input type="email" id="email" name="email"
-                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
-                                    placeholder="your@email.com">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2"
-                                    for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject"
-                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
-                                    placeholder="How can I help you?">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2"
-                                    for="message">Message</label>
-                                <textarea id="message" name="message" rows="4"
-                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
-                                    placeholder="Your message"></textarea>
-                            </div>
-                            <button type="submit"
-                                class="w-full bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors">Send
-                                Message</button>
-                        </form>
-                    </div>
-                    <div class="space-y-8">
-                        <div class="bg-white p-6 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
-                            <div class="space-y-4">
-                                <div class="flex items-center">
-                                    <i class="ri-map-pin-line ri-lg text-primary mr-4"></i>
-                                    <span class="text-gray-600">123 Business Street, Suite 100<br>San Francisco, CA
-                                        94111</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <i class="ri-phone-line ri-lg text-primary mr-4"></i>
-                                    <span class="text-gray-600">+1 (555) 123-4567</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <i class="ri-mail-line ri-lg text-primary mr-4"></i>
-                                    <span class="text-gray-600">contact@seoexpert.com</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-white p-6 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-semibold mb-4">Business Hours</h3>
-                            <div class="space-y-2">
-                                <div class="flex justify-between">
-                                    <span class="text-gray-600">Monday - Friday</span>
-                                    <span class="text-gray-600">9:00 AM - 6:00 PM</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span class="text-gray-600">Saturday</span>
-                                    <span class="text-gray-600">10:00 AM - 4:00 PM</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span class="text-gray-600">Sunday</span>
-                                    <span class="text-gray-600">Closed</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-white p-6 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-semibold mb-4">Connect With Me</h3>
-                            <div class="flex gap-4">
-                                <a href="#"
-                                    class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
-                                    <i class="ri-linkedin-fill ri-xl"></i>
-                                </a>
-                                <a href="#"
-                                    class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
-                                    <i class="ri-twitter-fill ri-xl"></i>
-                                </a>
-                                <a href="#"
-                                    class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
-                                    <i class="ri-github-fill ri-xl"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="bg-gradient-to-br from-purple-900 to-fuchsia-900 text-white py-16 relative overflow-hidden">
-        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\" 30\" height=\"30\" viewBox=\"0 0 30
-            30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M1.22676 0C1.91374 0 2.45351 0.539773
-            2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0
-            0.539773 0.539773 0 1.22676 0Z\" fill=\"rgba(255,255,255,0.05)\"%3E%3C/path%3E%3C/svg%3E')] opacity-10">
-        </div>
-        <div class="container mx-auto px-6 relative">
-            <div class="grid grid-cols-12 gap-8 mb-12">
-                <div class="col-span-12 md:col-span-4 lg:col-span-3">
-                    <div class="font-['Pacifico'] text-3xl text-primary mb-6">logo</div>
-                    <p class="text-gray-400 leading-relaxed mb-6">Dedicated SEO expert with over 8 years of experience
-                        helping businesses achieve sustainable growth through data-driven strategies.</p>
-                    <div class="flex gap-4">
-                        <a href="#"
-                            class="w-10 h-10 rounded-full bg-purple-800/50 hover:bg-primary/20 flex items-center justify-center text-purple-400 hover:text-primary transition-all duration-300 group">
-                            <i class="ri-linkedin-fill ri-lg group-hover:scale-110 transition-transform"></i>
-                        </a>
-                        <a href="#"
-                            class="w-10 h-10 rounded-full bg-purple-800/50 hover:bg-primary/20 flex items-center justify-center text-purple-400 hover:text-primary transition-all duration-300 group">
-                            <i class="ri-twitter-fill ri-lg group-hover:scale-110 transition-transform"></i>
-                        </a>
-                        <a href="#"
-                            class="w-10 h-10 rounded-full bg-purple-800/50 hover:bg-primary/20 flex items-center justify-center text-purple-400 hover:text-primary transition-all duration-300 group">
-                            <i class="ri-github-fill ri-lg group-hover:scale-110 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-span-6 md:col-span-4 lg:col-span-2">
-                    <h4 class="text-lg font-semibold mb-6 flex items-center gap-2">
-                        <i class="ri-links-line text-primary"></i>
-                        Quick Links
-                    </h4>
-                    <ul class="space-y-3">
-                        <li>
-                            <a href="#portfolio"
-                                class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
-                                <i
-                                    class="ri-arrow-right-s-line opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                                <span>Portfolio</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#services"
-                                class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
-                                <i
-                                    class="ri-arrow-right-s-line opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                                <span>Services</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#blog"
-                                class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
-                                <i
-                                    class="ri-arrow-right-s-line opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                                <span>Blog</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contact"
-                                class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
-                                <i
-                                    class="ri-arrow-right-s-line opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                                <span>Contact</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-span-6 md:col-span-4 lg:col-span-3">
-                    <h4 class="text-lg font-semibold mb-6 flex items-center gap-2">
-                        <i class="ri-article-line text-primary"></i>
-                        Latest Posts
-                    </h4>
-                    <div class="space-y-4">
-                        <a href="#" class="block group">
-                            <div class="text-sm text-gray-400 mb-1 flex items-center gap-2">
-                                <i class="ri-calendar-line"></i>
-                                <span>March 8, 2025</span>
-                            </div>
-                            <div class="text-gray-300 group-hover:text-white transition-colors">SEO Trends 2025: AI &
-                                Machine Learning</div>
-                        </a>
-                        <a href="#" class="block group">
-                            <div class="text-sm text-gray-400 mb-1 flex items-center gap-2">
-                                <i class="ri-calendar-line"></i>
-                                <span>March 5, 2025</span>
-                            </div>
-                            <div class="text-gray-300 group-hover:text-white transition-colors">Complete Technical SEO
-                                Audit Guide</div>
-                        </a>
-                        <a href="#" class="block group">
-                            <div class="text-sm text-gray-400 mb-1 flex items-center gap-2">
-                                <i class="ri-calendar-line"></i>
-                                <span>March 1, 2025</span>
-                            </div>
-                            <div class="text-gray-300 group-hover:text-white transition-colors">Content Strategy for
-                                2025</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-span-12 md:col-span-12 lg:col-span-4">
-                    <h4 class="text-lg font-semibold mb-6 flex items-center gap-2">
-                        <i class="ri-mail-line text-primary"></i>
-                        Newsletter
-                    </h4>
-                    <p class="text-gray-400 mb-6">Subscribe to get the latest SEO tips and insights delivered directly
-                        to your inbox.</p>
-                    <form id="newsletterForm" class="relative">
-                        <input type="email" placeholder="Enter your email"
-                            class="w-full px-4 py-3 bg-purple-800/50 rounded-lg focus:ring-2 focus:ring-primary focus:outline-none text-white placeholder-purple-400">
-                        <button type="submit"
-                            class="absolute right-2 top-1/2 -translate-y-1/2 bg-primary text-white px-4 py-1.5 rounded-md hover:bg-primary/90 transition-colors flex items-center gap-2">
-                            <span>Subscribe</span>
-                            <i class="ri-send-plane-line"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <div class="border-t border-purple-700/50 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p class="text-gray-400 text-center md:text-left">&copy; 2025 SEO Expert. All rights reserved.</p>
-                    <div class="flex flex-wrap justify-center gap-6">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
-                            <i class="ri-shield-check-line"></i>
-                            <span>Privacy Policy</span>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
-                            <i class="ri-file-list-3-line"></i>
-                            <span>Terms of Service</span>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
-                            <i class="ri-customer-service-2-line"></i>
-                            <span>Support</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-            document.getElementById('newsletterForm').addEventListener('submit', function (e) {
-                e.preventDefault();
-                const email = this.querySelector('input[type="email"]').value;
-                if (email) {
-                    const notification = document.createElement('div');
-                    notification.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg transform transition-all duration-300';
-                    notification.innerHTML = `
+<header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+<nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+<a href="#" class="text-2xl font-['Pacifico'] text-primary">logo</a>
+<div class="flex items-center gap-8">
+<a href="#portfolio" class="nav-link hover:text-primary transition-colors">Portfolio</a>
+<a href="#expertise" class="nav-link hover:text-primary transition-colors">Expertise</a>
+<a href="#blog" class="nav-link hover:text-primary transition-colors">Blog</a>
+<a href="#contact" class="nav-link hover:text-primary transition-colors">Contact</a>
+<button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap cursor-pointer">Hire Me</button>
+</div>
+</nav>
+</header>
+<main>
+<section class="pt-32 pb-20 relative overflow-hidden bg-gradient-to-br from-purple-50 to-fuchsia-50">
+<div class="absolute inset-0">
+<div class="absolute inset-0 bg-grid-slate-100 opacity-50"></div>
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5"></div>
+<div class="absolute w-96 h-96 -top-48 -left-48 bg-purple-500/30 rounded-full blur-3xl animate-pulse"></div>
+<div class="absolute w-96 h-96 -bottom-48 -right-48 bg-fuchsia-500/30 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+</div>
+<div class="container mx-auto px-6 relative">
+<div class="max-w-4xl mx-auto text-center space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-gray-600 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+<i class="ri-rocket-line animate-bounce"></i>
+<span class="text-sm font-medium">Ranked #1 SEO Expert in 2025</span>
+</div>
+<h1 class="text-6xl font-bold leading-tight bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+Transform Your Digital Presence with AI-Powered SEO
+</h1>
+<p class="text-gray-600 text-xl leading-relaxed">
+Leveraging cutting-edge AI and data analytics to deliver exceptional SEO results. With 200+ success stories and counting, we're ready to take your business to new heights.
+</p>
+<div class="flex justify-center gap-8">
+<div class="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+<div class="text-4xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform">200+</div>
+<div class="text-gray-600">Clients Served</div>
+</div>
+<div class="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+<div class="text-4xl font-bold text-secondary mb-2 group-hover:scale-110 transition-transform">95%</div>
+<div class="text-gray-600">Success Rate</div>
+</div>
+</div>
+<div class="flex justify-center gap-4">
+<button class="group bg-primary text-white px-8 py-4 !rounded-button hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/25 hover:-translate-y-1 whitespace-nowrap cursor-pointer">
+<span class="flex items-center gap-2">
+Start Your Journey
+<i class="ri-arrow-right-line transition-transform group-hover:translate-x-1"></i>
+</span>
+</button>
+<button class="group bg-white/80 backdrop-blur-sm text-primary px-8 py-4 !rounded-button hover:bg-white transition-all duration-300 shadow-lg hover:shadow-primary/25 hover:-translate-y-1 whitespace-nowrap cursor-pointer">
+<span class="flex items-center gap-2" onclick="openDemoModal()">
+Watch Demo
+<i class="ri-play-circle-line transition-transform group-hover:translate-x-1"></i>
+</span>
+<div id="demoModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] bg-white rounded-xl shadow-2xl">
+<div class="relative">
+<button onclick="closeDemoModal()" class="absolute -top-3 -right-3 w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-lg hover:bg-gray-50 transition-colors z-10">
+<i class="ri-close-line ri-lg"></i>
+</button>
+<div class="aspect-video rounded-t-xl overflow-hidden">
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">SEO Success Stories & Methodology</h3>
+<p class="text-gray-600">Watch how we've helped businesses achieve remarkable growth through our proven SEO strategies and methodologies.</p>
+</div>
+</div>
+</div>
+</div>
+<script>
+function openDemoModal() {
+document.getElementById('demoModal').classList.remove('hidden');
+document.body.style.overflow = 'hidden';
+}
+function closeDemoModal() {
+document.getElementById('demoModal').classList.add('hidden');
+document.body.style.overflow = 'auto';
+}
+document.getElementById('demoModal').addEventListener('click', function(e) {
+if (e.target === this) {
+closeDemoModal();
+}
+});
+</script>
+</button>
+</div>
+<div class="pt-12 flex justify-center">
+<div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-6 inline-flex items-center gap-6">
+<div class="flex -space-x-4">
+<img src="https://public.readdy.ai/ai/img_res/124e9dc88d5db66c34ef033b9d16cc09.jpg" class="w-12 h-12 rounded-full border-2 border-white" alt="Client">
+<img src="https://public.readdy.ai/ai/img_res/7609898f3dcf97e0e0433686bd4e7d8c.jpg" class="w-12 h-12 rounded-full border-2 border-white" alt="Client">
+<img src="https://public.readdy.ai/ai/img_res/827d315937a3801366c76383db152df8.jpg" class="w-12 h-12 rounded-full border-2 border-white" alt="Client">
+</div>
+<div class="text-sm">
+<div class="font-semibold text-gray-900">Trusted by Industry Leaders</div>
+<div class="text-gray-600">Join our growing community of success</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="portfolio" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">Featured Projects</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Explore some of my most successful SEO and digital marketing campaigns that have delivered exceptional results for clients across various industries.</p>
+</div>
+<div class="flex gap-4 mb-8 justify-center">
+<button class="px-6 py-2 !rounded-button bg-primary text-white hover:bg-primary/90 transition-colors whitespace-nowrap cursor-pointer">All Projects</button>
+<button class="px-6 py-2 !rounded-button bg-gray-100 hover:bg-gray-200 transition-colors whitespace-nowrap cursor-pointer">E-commerce</button>
+<button class="px-6 py-2 !rounded-button bg-gray-100 hover:bg-gray-200 transition-colors whitespace-nowrap cursor-pointer">SaaS</button>
+<button class="px-6 py-2 !rounded-button bg-gray-100 hover:bg-gray-200 transition-colors whitespace-nowrap cursor-pointer">Local SEO</button>
+</div>
+<div class="grid grid-cols-3 gap-8">
+<div class="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+<img src="https://public.readdy.ai/ai/img_res/84a946211aa9bec3eeadb362efb6b43c.jpg" alt="E-commerce SEO Project" class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Global E-commerce Platform Optimization</h3>
+<p class="text-gray-600 mb-4">Increased organic traffic by 156% and conversion rates by 42% through comprehensive technical SEO and content strategy.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Technical SEO</span>
+<span class="px-3 py-1 bg-fuchsia-100 text-fuchsia-800 rounded-full text-sm">Content Strategy</span>
+<span class="px-3 py-1 bg-violet-100 text-violet-800 rounded-full text-sm">E-commerce</span>
+</div>
+<a href="#" class="text-primary font-medium hover:text-primary/80 transition-colors cursor-pointer">View Case Study →</a>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+<img src="https://public.readdy.ai/ai/img_res/84edb5200381c83b0edb48eba7943601.jpg" alt="SaaS SEO Project" class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">SaaS Company Market Expansion</h3>
+<p class="text-gray-600 mb-4">Achieved 200% growth in qualified leads through targeted keyword strategy and conversion rate optimization.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">SaaS SEO</span>
+<span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Lead Generation</span>
+<span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">CRO</span>
+</div>
+<a href="#" class="text-primary font-medium hover:text-primary/80 transition-colors cursor-pointer">View Case Study →</a>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+<img src="https://public.readdy.ai/ai/img_res/929475b14e5341ebfcdc52f54afb4ef1.jpg" alt="Local SEO Project" class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Multi-Location Restaurant Chain SEO</h3>
+<p class="text-gray-600 mb-4">Boosted local search visibility by 85% and increased foot traffic across 25 locations nationwide.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Local SEO</span>
+<span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">GMB Optimization</span>
+<span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Local Citations</span>
+</div>
+<a href="#" class="text-primary font-medium hover:text-primary/80 transition-colors cursor-pointer">View Case Study →</a>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap cursor-pointer">View All Projects</button>
+</div>
+</div>
+</section>
+<section id="expertise" class="py-20 bg-[#fafafa]">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">Areas of Expertise</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Leveraging years of experience and continuous learning to deliver comprehensive SEO solutions that drive real business results.</p>
+</div>
+<div class="grid grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-lg mb-6">
+<i class="ri-search-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Technical SEO</h3>
+<p class="text-gray-600 mb-4">Expert in website architecture, crawlability optimization, and resolving technical barriers to improve search engine performance.</p>
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-sm text-gray-600">Site Architecture</span>
+<div class="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
+<div class="w-[95%] h-full bg-primary"></div>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-sm text-gray-600">Core Web Vitals</span>
+<div class="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
+<div class="w-[90%] h-full bg-primary"></div>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-sm text-gray-600">Mobile Optimization</span>
+<div class="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
+<div class="w-[85%] h-full bg-primary"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-lg mb-6">
+<i class="ri-article-line ri-2x text-secondary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Content Strategy</h3>
+<p class="text-gray-600 mb-4">Creating data-driven content strategies that align with search intent and drive organic traffic growth.</p>
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-sm text-gray-600">Keyword Research</span>
+<div class="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
+<div class="w-[92%] h-full bg-secondary"></div>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-sm text-gray-600">Content Planning</span>
+<div class="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
+<div class="w-[88%] h-full bg-secondary"></div>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-sm text-gray-600">Content Optimization</span>
+<div class="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
+<div class="w-[85%] h-full bg-secondary"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-lg mb-6">
+<i class="ri-line-chart-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Analytics & Reporting</h3>
+<p class="text-gray-600 mb-4">Advanced data analysis and reporting to track KPIs and demonstrate clear ROI from SEO initiatives.</p>
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-sm text-gray-600">Google Analytics</span>
+<div class="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
+<div class="w-[94%] h-full bg-primary"></div>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-sm text-gray-600">Data Analysis</span>
+<div class="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
+<div class="w-[89%] h-full bg-primary"></div>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-sm text-gray-600">ROI Tracking</span>
+<div class="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
+<div class="w-[87%] h-full bg-primary"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-[#fafafa]">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">Client Testimonials</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Here's what some of my clients have to say about working together.</p>
+</div>
+<div class="relative">
+<div class="overflow-hidden">
+<div class="testimonial-slider flex transition-transform duration-300" id="testimonialSlider">
+<div class="w-1/3 flex-shrink-0 px-4">
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<div class="flex items-center mb-4">
+<img src="https://public.readdy.ai/ai/img_res/51ef47369af319bd3bba27fea6bec05c.jpg" alt="Sarah Johnson" class="w-12 h-12 rounded-full object-cover">
+<div class="ml-4">
+<h4 class="font-semibold">Sarah Johnson</h4>
+<p class="text-sm text-gray-600">Marketing Director, TechCorp</p>
+</div>
+</div>
+<p class="text-gray-600">"The SEO results exceeded our expectations. Our organic traffic increased by 200% within 6 months, leading to a significant boost in qualified leads."</p>
+</div>
+</div>
+<div class="w-1/3 flex-shrink-0 px-4">
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<div class="flex items-center mb-4">
+<img src="https://public.readdy.ai/ai/img_res/d2169ff06e3d8866f0ef931ee8898e1d.jpg" alt="Michael Chen" class="w-12 h-12 rounded-full object-cover">
+<div class="ml-4">
+<h4 class="font-semibold">Michael Chen</h4>
+<p class="text-sm text-gray-600">CEO, GrowthStart</p>
+</div>
+</div>
+<p class="text-gray-600">"Working with this SEO expert has transformed our online presence. The strategic approach and attention to detail were impressive."</p>
+</div>
+</div>
+<div class="w-1/3 flex-shrink-0 px-4">
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<div class="flex items-center mb-4">
+<img src="https://public.readdy.ai/ai/img_res/a458f2cb6b00120044045b3c3a4b3591.jpg" alt="Emily Rodriguez" class="w-12 h-12 rounded-full object-cover">
+<div class="ml-4">
+<h4 class="font-semibold">Emily Rodriguez</h4>
+<p class="text-sm text-gray-600">Founder, Digital First</p>
+</div>
+</div>
+<p class="text-gray-600">"The local SEO campaign delivered amazing results for our multi-location business. We've seen a 150% increase in local search visibility."</p>
+</div>
+</div>
+</div>
+</div>
+<button class="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-lg hover:bg-gray-50 transition-colors cursor-pointer" onclick="moveTestimonials('prev')">
+<i class="ri-arrow-left-s-line ri-xl"></i>
+</button>
+<button class="absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-lg hover:bg-gray-50 transition-colors cursor-pointer" onclick="moveTestimonials('next')">
+<i class="ri-arrow-right-s-line ri-xl"></i>
+</button>
+</div>
+</div>
+</section>
+<section id="achievements" class="py-20 bg-[#fafafa]">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">Achievements & Certifications</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Professional certifications and recognition that demonstrate expertise and commitment to excellence.</p>
+</div>
+<div class="grid grid-cols-3 gap-8">
+<div class="group bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 cursor-pointer" onclick="showCertificateDetails(0)">
+<div class="relative">
+<img src="https://public.readdy.ai/ai/img_res/3ededc08a6c090ee40e226c3efd49e87.jpg" alt="Google SEO Certification" class="w-full h-48 object-cover">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<span class="text-white font-medium">Click to view details</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-xl font-semibold">Google SEO Certification</h3>
+<i class="ri-verified-badge-fill text-primary ri-lg"></i>
+</div>
+<p class="text-gray-600">Advanced Search Engine Optimization</p>
+<div class="mt-4 flex items-center text-sm text-gray-500">
+<i class="ri-calendar-line mr-2"></i>
+<span>Achieved: January 2025</span>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 cursor-pointer" onclick="showCertificateDetails(1)">
+<div class="relative">
+<img src="https://public.readdy.ai/ai/img_res/35554ba13746dbc315849346a4b821c3.jpg" alt="Digital Marketing Excellence" class="w-full h-48 object-cover">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<span class="text-white font-medium">Click to view details</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-xl font-semibold">HubSpot Advanced</h3>
+<i class="ri-verified-badge-fill text-primary ri-lg"></i>
+</div>
+<p class="text-gray-600">Digital Marketing Excellence</p>
+<div class="mt-4 flex items-center text-sm text-gray-500">
+<i class="ri-calendar-line mr-2"></i>
+<span>Achieved: March 2025</span>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 cursor-pointer" onclick="showCertificateDetails(2)">
+<div class="relative">
+<img src="https://public.readdy.ai/ai/img_res/f9818990defaba769eafa430f7d1157f.jpg" alt="Analytics Master" class="w-full h-48 object-cover">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<span class="text-white font-medium">Click to view details</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-xl font-semibold">Analytics Master</h3>
+<i class="ri-verified-badge-fill text-primary ri-lg"></i>
+</div>
+<p class="text-gray-600">Advanced Data Analytics</p>
+<div class="mt-4 flex items-center text-sm text-gray-500">
+<i class="ri-calendar-line mr-2"></i>
+<span>Achieved: February 2025</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="certificateModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] bg-white rounded-xl shadow-2xl">
+<button onclick="closeCertificateModal()" class="absolute -top-3 -right-3 w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-lg hover:bg-gray-50 transition-colors">
+<i class="ri-close-line ri-lg"></i>
+</button>
+<div class="p-8">
+<div id="certificateContent"></div>
+</div>
+</div>
+</div>
+<script>
+const certificates = [
+{
+title: "Google SEO Certification",
+issuer: "Google",
+date: "January 2025",
+description: "Advanced certification in Search Engine Optimization covering technical SEO, content optimization, and search analytics.",
+skills: ["Technical SEO", "Content Strategy", "Search Analytics", "Mobile Optimization"],
+projects: "Led 15+ successful SEO campaigns with average traffic increase of 200%",
+image: "https://public.readdy.ai/ai/img_res/18b5b9cf86296c0e38ab39134e520872.jpg"
+},
+{
+title: "HubSpot Advanced",
+issuer: "HubSpot Academy",
+date: "March 2025",
+description: "Comprehensive certification in digital marketing excellence, focusing on inbound methodology and content marketing.",
+skills: ["Inbound Marketing", "Content Strategy", "Lead Generation", "Marketing Automation"],
+projects: "Implemented successful marketing campaigns for 20+ enterprise clients",
+image: "https://public.readdy.ai/ai/img_res/c86cb06a46d8754d35dae3c6e3f44046.jpg"
+},
+{
+title: "Analytics Master",
+issuer: "Analytics Academy",
+date: "February 2025",
+description: "Advanced certification in data analytics and visualization, focusing on actionable insights and reporting.",
+skills: ["Data Analysis", "Visualization", "Reporting", "Predictive Analytics"],
+projects: "Developed analytics frameworks for 25+ high-traffic websites",
+image: "https://public.readdy.ai/ai/img_res/3d32f95cc407209797156c93a92c4f85.jpg"
+}
+];
+function showCertificateDetails(index) {
+const cert = certificates[index];
+const content = `
+<div class="space-y-6">
+<img src="${cert.image}" alt="${cert.title}" class="w-full h-64 object-cover rounded-lg mb-6">
+<div class="flex items-center justify-between">
+<h3 class="text-2xl font-bold">${cert.title}</h3>
+<div class="flex items-center gap-2">
+<i class="ri-verified-badge-fill text-primary ri-lg"></i>
+<span class="text-gray-600">${cert.issuer}</span>
+</div>
+</div>
+<p class="text-gray-600">${cert.description}</p>
+<div class="space-y-4">
+<div>
+<h4 class="font-semibold mb-2">Key Skills</h4>
+<div class="flex flex-wrap gap-2">
+${cert.skills.map(skill => `
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">${skill}</span>
+`).join('')}
+</div>
+</div>
+<div>
+<h4 class="font-semibold mb-2">Project Experience</h4>
+<p class="text-gray-600">${cert.projects}</p>
+</div>
+<div class="flex items-center text-sm text-gray-500">
+<i class="ri-calendar-line mr-2"></i>
+<span>Achieved: ${cert.date}</span>
+</div>
+</div>
+</div>
+`;
+document.getElementById('certificateContent').innerHTML = content;
+document.getElementById('certificateModal').classList.remove('hidden');
+document.body.style.overflow = 'hidden';
+}
+function closeCertificateModal() {
+document.getElementById('certificateModal').classList.add('hidden');
+document.body.style.overflow = 'auto';
+}
+document.getElementById('certificateModal').addEventListener('click', function(e) {
+if (e.target === this) {
+closeCertificateModal();
+}
+});
+</script>
+</section>
+<section id="services" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">Services Offered</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Comprehensive SEO solutions tailored to your business needs.</p>
+</div>
+<div class="grid grid-cols-3 gap-8">
+<div class="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden cursor-pointer" onclick="showServiceDetails(0)">
+<div class="relative h-48">
+<img src="https://public.readdy.ai/ai/img_res/9241c94361e8aada92816da5c59a39d0.jpg" alt="Technical SEO Service" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<span class="text-white font-medium">Learn More</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-xl font-semibold">Technical SEO</h3>
+<div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full text-primary">
+<i class="ri-code-line ri-lg"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-4">Comprehensive technical optimization to improve search engine crawlability and indexing.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Site Architecture</span>
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Core Web Vitals</span>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden cursor-pointer" onclick="showServiceDetails(1)">
+<div class="relative h-48">
+<img src="https://public.readdy.ai/ai/img_res/ded754febf44ae488ee8e53c610f8a33.jpg" alt="Content Strategy Service" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<span class="text-white font-medium">Learn More</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-xl font-semibold">Content Strategy</h3>
+<div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full text-primary">
+<i class="ri-article-line ri-lg"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-4">Data-driven content strategy to attract and engage your target audience.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Keyword Research</span>
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Content Planning</span>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden cursor-pointer" onclick="showServiceDetails(2)">
+<div class="relative h-48">
+<img src="https://public.readdy.ai/ai/img_res/e35ecbda104d146f51673f145a19a18e.jpg" alt="Analytics Service" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<span class="text-white font-medium">Learn More</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-xl font-semibold">Analytics & Reporting</h3>
+<div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full text-primary">
+<i class="ri-line-chart-line ri-lg"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-4">Comprehensive analytics and reporting to track your SEO performance.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Performance Tracking</span>
+<span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">ROI Analysis</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="serviceModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] bg-white rounded-xl shadow-2xl">
+<button onclick="closeServiceModal()" class="absolute -top-3 -right-3 w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-lg hover:bg-gray-50 transition-colors">
+<i class="ri-close-line ri-lg"></i>
+</button>
+<div class="p-8">
+<div id="serviceContent"></div>
+</div>
+</div>
+</div>
+<script>
+const services = [
+{
+title: "Technical SEO",
+description: "Comprehensive technical optimization to improve search engine crawlability and indexing. We ensure your website meets all technical requirements for optimal performance.",
+features: [
+"Site Architecture Optimization",
+"Core Web Vitals Enhancement",
+"Mobile Optimization",
+"Schema Markup Implementation",
+"Site Speed Optimization"
+],
+benefits: [
+"Improved Search Rankings",
+"Better User Experience",
+"Increased Crawl Efficiency",
+"Enhanced Site Performance"
+],
+image: "https://public.readdy.ai/ai/img_res/2037befd6bc6505408645c134ce8af85.jpg"
+},
+{
+title: "Content Strategy",
+description: "Data-driven content strategy to attract and engage your target audience. We create content that resonates with your users and ranks well in search engines.",
+features: [
+"Keyword Research & Analysis",
+"Content Calendar Planning",
+"Content Optimization",
+"Topic Cluster Creation",
+"Content Performance Tracking"
+],
+benefits: [
+"Increased Organic Traffic",
+"Higher Engagement Rates",
+"Improved Conversions",
+"Better Brand Authority"
+],
+image: "https://public.readdy.ai/ai/img_res/6e1e6f0128a5c2e31fe3a7040227e575.jpg"
+},
+{
+title: "Analytics & Reporting",
+description: "Comprehensive analytics and reporting to track your SEO performance and demonstrate ROI from your digital marketing initiatives.",
+features: [
+"Custom Dashboard Creation",
+"KPI Tracking & Analysis",
+"ROI Measurement",
+"Competitor Analysis",
+"Monthly Performance Reports"
+],
+benefits: [
+"Data-Driven Decisions",
+"Clear Performance Metrics",
+"Competitive Insights",
+"Actionable Recommendations"
+],
+image: "https://public.readdy.ai/ai/img_res/a0911ca63dc36653c3b6c3b8608e621b.jpg"
+}
+];
+function showServiceDetails(index) {
+const service = services[index];
+const content = `
+<div class="space-y-6">
+<img src="${service.image}" alt="${service.title}" class="w-full h-64 object-cover rounded-lg mb-6">
+<div class="flex items-center justify-between">
+<h3 class="text-2xl font-bold">${service.title}</h3>
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full text-primary">
+<i class="ri-${index === 0 ? 'code' : index === 1 ? 'article' : 'line-chart'}-line ri-xl"></i>
+</div>
+</div>
+<p class="text-gray-600">${service.description}</p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<h4 class="font-semibold mb-4">Key Features</h4>
+<ul class="space-y-2">
+${service.features.map(feature => `
+<li class="flex items-center gap-2 text-gray-600">
+<i class="ri-check-line text-primary"></i>
+<span>${feature}</span>
+</li>
+`).join('')}
+</ul>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Benefits</h4>
+<ul class="space-y-2">
+${service.benefits.map(benefit => `
+<li class="flex items-center gap-2 text-gray-600">
+<i class="ri-arrow-right-line text-primary"></i>
+<span>${benefit}</span>
+</li>
+`).join('')}
+</ul>
+</div>
+</div>
+<div class="mt-8">
+<button onclick="closeServiceModal()" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors">Get Started</button>
+</div>
+</div>
+`;
+document.getElementById('serviceContent').innerHTML = content;
+document.getElementById('serviceModal').classList.remove('hidden');
+document.body.style.overflow = 'hidden';
+}
+function closeServiceModal() {
+document.getElementById('serviceModal').classList.add('hidden');
+document.body.style.overflow = 'auto';
+}
+document.getElementById('serviceModal').addEventListener('click', function(e) {
+if (e.target === this) {
+closeServiceModal();
+}
+});
+</script>
+</section>
+<section id="blog" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">Latest Blog Posts</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Stay updated with the latest SEO trends, tips, and strategies.</p>
+</div>
+<div class="grid grid-cols-3 gap-8">
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/52799a1008f4024829c0fad05ebe6483.jpg" alt="SEO Trends 2025" class="w-full h-48 object-cover">
+<div class="p-6">
+<div class="flex items-center text-sm text-gray-500 mb-2">
+<i class="ri-calendar-line mr-2"></i>
+<span>March 8, 2025</span>
+</div>
+<h3 class="text-xl font-semibold mb-2">Top SEO Trends to Watch in 2025</h3>
+<p class="text-gray-600 mb-4">Explore the latest SEO trends and strategies that will shape the digital landscape in 2025.</p>
+<a href="#" class="text-primary font-medium hover:text-primary/80 transition-colors cursor-pointer">Read More →</a>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/9a7e364824f29c359a38784ed998ae13.jpg" alt="Technical SEO Guide" class="w-full h-48 object-cover">
+<div class="p-6">
+<div class="flex items-center text-sm text-gray-500 mb-2">
+<i class="ri-calendar-line mr-2"></i>
+<span>March 5, 2025</span>
+</div>
+<h3 class="text-xl font-semibold mb-2">Complete Technical SEO Audit Guide</h3>
+<p class="text-gray-600 mb-4">Learn how to conduct a comprehensive technical SEO audit to improve your website's performance.</p>
+<a href="#" class="text-primary font-medium hover:text-primary/80 transition-colors cursor-pointer">Read More →</a>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/6abf88e10760a0e4c5c28332cdb35da9.jpg" alt="Content Strategy" class="w-full h-48 object-cover">
+<div class="p-6">
+<div class="flex items-center text-sm text-gray-500 mb-2">
+<i class="ri-calendar-line mr-2"></i>
+<span>March 1, 2025</span>
+</div>
+<h3 class="text-xl font-semibold mb-2">Building an Effective Content Strategy</h3>
+<p class="text-gray-600 mb-4">Discover the key elements of a successful content strategy that drives organic traffic.</p>
+<a href="#" class="text-primary font-medium hover:text-primary/80 transition-colors cursor-pointer">Read More →</a>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap cursor-pointer">View All Posts</button>
+</div>
+</div>
+</section>
+<section id="contact" class="py-20 bg-[#fafafa]">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Ready to improve your search rankings? Let's discuss how I can help your business grow.</p>
+</div>
+<div class="grid grid-cols-2 gap-12">
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<form id="contactForm" class="space-y-6">
+<div>
+<label class="block text-sm font-medium text-gray -700 mb-2" for="name">Name</label>
+<input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" placeholder="Your name">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2" for="email">Email</label>
+<input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" placeholder="your@email.com">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2" for="subject">Subject</label>
+<input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" placeholder="How can I help you?">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2" for="message">Message</label>
+<textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" placeholder="Your message"></textarea>
+</div>
+<button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors">Send Message</button>
+</form>
+</div>
+<div class="space-y-8">
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+<div class="space-y-4">
+<div class="flex items-center">
+<i class="ri-map-pin-line ri-lg text-primary mr-4"></i>
+<span class="text-gray-600">123 Business Street, Suite 100<br>San Francisco, CA 94111</span>
+</div>
+<div class="flex items-center">
+<i class="ri-phone-line ri-lg text-primary mr-4"></i>
+<span class="text-gray-600">+1 (555) 123-4567</span>
+</div>
+<div class="flex items-center">
+<i class="ri-mail-line ri-lg text-primary mr-4"></i>
+<span class="text-gray-600">contact@seoexpert.com</span>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<h3 class="text-xl font-semibold mb-4">Business Hours</h3>
+<div class="space-y-2">
+<div class="flex justify-between">
+<span class="text-gray-600">Monday - Friday</span>
+<span class="text-gray-600">9:00 AM - 6:00 PM</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-600">Saturday</span>
+<span class="text-gray-600">10:00 AM - 4:00 PM</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-600">Sunday</span>
+<span class="text-gray-600">Closed</span>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<h3 class="text-xl font-semibold mb-4">Connect With Me</h3>
+<div class="flex gap-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+<i class="ri-linkedin-fill ri-xl"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+<i class="ri-twitter-fill ri-xl"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors">
+<i class="ri-github-fill ri-xl"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-gradient-to-br from-purple-900 to-fuchsia-900 text-white py-16 relative overflow-hidden">
+<div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"30\" height=\"30\" viewBox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z\" fill=\"rgba(255,255,255,0.05)\"%3E%3C/path%3E%3C/svg%3E')] opacity-10"></div>
+<div class="container mx-auto px-6 relative">
+<div class="grid grid-cols-12 gap-8 mb-12">
+<div class="col-span-12 md:col-span-4 lg:col-span-3">
+<div class="font-['Pacifico'] text-3xl text-primary mb-6">logo</div>
+<p class="text-gray-400 leading-relaxed mb-6">Dedicated SEO expert with over 8 years of experience helping businesses achieve sustainable growth through data-driven strategies.</p>
+<div class="flex gap-4">
+<a href="#" class="w-10 h-10 rounded-full bg-purple-800/50 hover:bg-primary/20 flex items-center justify-center text-purple-400 hover:text-primary transition-all duration-300 group">
+<i class="ri-linkedin-fill ri-lg group-hover:scale-110 transition-transform"></i>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-purple-800/50 hover:bg-primary/20 flex items-center justify-center text-purple-400 hover:text-primary transition-all duration-300 group">
+<i class="ri-twitter-fill ri-lg group-hover:scale-110 transition-transform"></i>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-purple-800/50 hover:bg-primary/20 flex items-center justify-center text-purple-400 hover:text-primary transition-all duration-300 group">
+<i class="ri-github-fill ri-lg group-hover:scale-110 transition-transform"></i>
+</a>
+</div>
+</div>
+<div class="col-span-6 md:col-span-4 lg:col-span-2">
+<h4 class="text-lg font-semibold mb-6 flex items-center gap-2">
+<i class="ri-links-line text-primary"></i>
+Quick Links
+</h4>
+<ul class="space-y-3">
+<li>
+<a href="#portfolio" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
+<i class="ri-arrow-right-s-line opacity-0 group-hover:opacity-100 transition-opacity"></i>
+<span>Portfolio</span>
+</a>
+</li>
+<li>
+<a href="#blog" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
+<i class="ri-arrow-right-s-line opacity-0 group-hover:opacity-100 transition-opacity"></i>
+<span>Blog</span>
+</a>
+</li>
+<li>
+<a href="#contact" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
+<i class="ri-arrow-right-s-line opacity-0 group-hover:opacity-100 transition-opacity"></i>
+<span>Contact</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="col-span-6 md:col-span-4 lg:col-span-3">
+<h4 class="text-lg font-semibold mb-6 flex items-center gap-2">
+<i class="ri-article-line text-primary"></i>
+Latest Posts
+</h4>
+<div class="space-y-4">
+<a href="#" class="block group">
+<div class="text-sm text-gray-400 mb-1 flex items-center gap-2">
+<i class="ri-calendar-line"></i>
+<span>March 8, 2025</span>
+</div>
+<div class="text-gray-300 group-hover:text-white transition-colors">SEO Trends 2025: AI & Machine Learning</div>
+</a>
+<a href="#" class="block group">
+<div class="text-sm text-gray-400 mb-1 flex items-center gap-2">
+<i class="ri-calendar-line"></i>
+<span>March 5, 2025</span>
+</div>
+<div class="text-gray-300 group-hover:text-white transition-colors">Complete Technical SEO Audit Guide</div>
+</a>
+<a href="#" class="block group">
+<div class="text-sm text-gray-400 mb-1 flex items-center gap-2">
+<i class="ri-calendar-line"></i>
+<span>March 1, 2025</span>
+</div>
+<div class="text-gray-300 group-hover:text-white transition-colors">Content Strategy for 2025</div>
+</a>
+</div>
+</div>
+<div class="col-span-12 md:col-span-12 lg:col-span-4">
+<h4 class="text-lg font-semibold mb-6 flex items-center gap-2">
+<i class="ri-mail-line text-primary"></i>
+Newsletter
+</h4>
+<p class="text-gray-400 mb-6">Subscribe to get the latest SEO tips and insights delivered directly to your inbox.</p>
+<form id="newsletterForm" class="relative">
+<input type="email" placeholder="Enter your email" class="w-full px-4 py-3 bg-purple-800/50 rounded-lg focus:ring-2 focus:ring-primary focus:outline-none text-white placeholder-purple-400">
+<button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 bg-primary text-white px-4 py-1.5 rounded-md hover:bg-primary/90 transition-colors flex items-center gap-2">
+<span>Subscribe</span>
+<i class="ri-send-plane-line"></i>
+</button>
+</form>
+</div>
+</div>
+<div class="border-t border-purple-700/50 pt-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-gray-400 text-center md:text-left">&copy; 2025 SEO Expert. All rights reserved.</p>
+<div class="flex flex-wrap justify-center gap-6">
+<a href="#" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+<i class="ri-shield-check-line"></i>
+<span>Privacy Policy</span>
+</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+<i class="ri-file-list-3-line"></i>
+<span>Terms of Service</span>
+</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+<i class="ri-customer-service-2-line"></i>
+<span>Support</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+e.preventDefault();
+const email = this.querySelector('input[type="email"]').value;
+if (email) {
+const notification = document.createElement('div');
+notification.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg transform transition-all duration-300';
+notification.innerHTML = `
 <div class="flex items-center gap-2">
 <i class="ri-check-line"></i>
 <span>Successfully subscribed to newsletter!</span>
 </div>
 `;
-                    document.body.appendChild(notification);
-                    this.reset();
-                    setTimeout(() => {
-                        notification.style.transform = 'translateY(150%)';
-                        setTimeout(() => notification.remove(), 300);
-                    }, 3000);
-                }
-            });
-        </script>
-    </footer>
-    <script>
-        let currentSlide = 0;
-        const totalSlides = 3;
-        const slider = document.getElementById('testimonialSlider');
-        function moveTestimonials(direction) {
-            if (direction === 'next') {
-                currentSlide = (currentSlide + 1) % totalSlides;
-            } else {
-                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-            }
-            slider.style.transform = `translateX(-${currentSlide * 33.333}%)`;
-        }
-        setInterval(() => moveTestimonials('next'), 5000);
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function () {
-                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const section = entry.target;
-                    const navLink = document.querySelector(`a[href="#${section.id}"]`);
-                    if (navLink) {
-                        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-                        navLink.classList.add('active');
-                    }
-                }
-            });
-        }, { threshold: 0.5 });
-        document.querySelectorAll('section[id]').forEach(section => {
-            observer.observe(section);
-        });
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            console.log('Form submitted:', data);
-            this.reset();
-            const notification = document.createElement('div');
-            notification.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg transform transition-transform duration-300 translate-y-0';
-            notification.textContent = 'Message sent successfully!';
-            document.body.appendChild(notification);
-            setTimeout(() => {
-                notification.style.transform = 'translateY(150%)';
-                setTimeout(() => notification.remove(), 300);
-            }, 3000);
-        });
-    </script>
+document.body.appendChild(notification);
+this.reset();
+setTimeout(() => {
+notification.style.transform = 'translateY(150%)';
+setTimeout(() => notification.remove(), 300);
+}, 3000);
+}
+});
+</script>
+</footer>
+<script>
+let currentSlide = 0;
+const totalSlides = 3;
+const slider = document.getElementById('testimonialSlider');
+function moveTestimonials(direction) {
+if (direction === 'next') {
+currentSlide = (currentSlide + 1) % totalSlides;
+} else {
+currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+}
+slider.style.transform = `translateX(-${currentSlide * 33.333}%)`;
+}
+setInterval(() => moveTestimonials('next'), 5000);
+document.querySelectorAll('.nav-link').forEach(link => {
+link.addEventListener('click', function() {
+document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+this.classList.add('active');
+});
+});
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+const section = entry.target;
+const navLink = document.querySelector(`a[href="#${section.id}"]`);
+if (navLink) {
+document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+navLink.classList.add('active');
+}
+}
+});
+}, { threshold: 0.5 });
+document.querySelectorAll('section[id]').forEach(section => {
+observer.observe(section);
+});
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+e.preventDefault();
+const formData = new FormData(this);
+const data = Object.fromEntries(formData);
+console.log('Form submitted:', data);
+this.reset();
+const notification = document.createElement('div');
+notification.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg transform transition-transform duration-300 translate-y-0';
+notification.textContent = 'Message sent successfully!';
+document.body.appendChild(notification);
+setTimeout(() => {
+notification.style.transform = 'translateY(150%)';
+setTimeout(() => notification.remove(), 300);
+}, 3000);
+});
+</script>
 </body>
-
 </html>
