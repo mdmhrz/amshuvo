@@ -292,3 +292,53 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+// client Testimonals Scripts
+
+let currentSlide = 0;
+const totalSlides = 3;
+const slider = document.getElementById('testimonialSlider');
+function moveTestimonials(direction) {
+    if (direction === 'next') {
+        currentSlide = (currentSlide + 1) % totalSlides;
+    } else {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    }
+    slider.style.transform = `translateX(-${currentSlide * 33.333}%)`;
+}
+setInterval(() => moveTestimonials('next'), 5000);
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function () {
+        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const section = entry.target;
+            const navLink = document.querySelector(`a[href="#${section.id}"]`);
+            if (navLink) {
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                navLink.classList.add('active');
+            }
+        }
+    });
+}, { threshold: 0.5 });
+document.querySelectorAll('section[id]').forEach(section => {
+    observer.observe(section);
+});
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const data = Object.fromEntries(formData);
+    console.log('Form submitted:', data);
+    this.reset();
+    const notification = document.createElement('div');
+    notification.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg transform transition-transform duration-300 translate-y-0';
+    notification.textContent = 'Message sent successfully!';
+    document.body.appendChild(notification);
+    setTimeout(() => {
+        notification.style.transform = 'translateY(150%)';
+        setTimeout(() => notification.remove(), 300);
+    }, 3000);
+});
