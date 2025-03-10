@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // Script for Hero Section
 
 document.addEventListener('DOMContentLoaded', function () {
-    const texts = ['Web Developer', 'UI Designer', 'Problem Solver', 'Tech Enthusiast'];
+    const texts = ['an SEO Expert', 'a Keyword Researcher', 'an On Page SEO Expert', 'a Technical SEO Expert'];
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
