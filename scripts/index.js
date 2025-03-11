@@ -43,6 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+
 // Script for Hero Section
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -78,6 +80,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+
 // Script for Journey Sectoin
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -95,6 +99,8 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(item);
     });
 });
+
+
 
 
 // Personal Section Script
@@ -344,6 +350,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 });
 
 
+
 // Script for Services
 const services = [
     {
@@ -457,6 +464,7 @@ document.getElementById('serviceModal').addEventListener('click', function (e) {
 });
 
 
+
 // Script for Acievements
 
 const certificates = [
@@ -532,5 +540,29 @@ function closeCertificateModal() {
 document.getElementById('certificateModal').addEventListener('click', function (e) {
     if (e.target === this) {
         closeCertificateModal();
+    }
+});
+
+
+// Script for Footer
+
+document.getElementById('newsletterForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const email = this.querySelector('input[type="email"]').value;
+    if (email) {
+        const notification = document.createElement('div');
+        notification.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg transform transition-all duration-300';
+        notification.innerHTML = `
+    <div class="flex items-center gap-2">
+        <i class="ri-check-line"></i>
+        <span>Successfully subscribed to newsletter!</span>
+    </div>
+    `;
+        document.body.appendChild(notification);
+        this.reset();
+        setTimeout(() => {
+            notification.style.transform = 'translateY(150%)';
+            setTimeout(() => notification.remove(), 300);
+        }, 3000);
     }
 });
