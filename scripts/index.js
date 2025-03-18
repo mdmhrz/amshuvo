@@ -475,7 +475,7 @@ const certificates = [
         description: "Advanced certification in Search Engine Optimization covering technical SEO, content optimization, and search analytics.",
         skills: ["Technical SEO", "Content Strategy", "Search Analytics", "Mobile Optimization"],
         projects: "Led 15+ successful SEO campaigns with average traffic increase of 200%",
-        image: "https://public.readdy.ai/ai/img_res/18b5b9cf86296c0e38ab39134e520872.jpg"
+        image: "./assets/certificate-1.png"
     },
     {
         title: "HubSpot Advanced",
@@ -484,7 +484,7 @@ const certificates = [
         description: "Comprehensive certification in digital marketing excellence, focusing on inbound methodology and content marketing.",
         skills: ["Inbound Marketing", "Content Strategy", "Lead Generation", "Marketing Automation"],
         projects: "Implemented successful marketing campaigns for 20+ enterprise clients",
-        image: "https://public.readdy.ai/ai/img_res/c86cb06a46d8754d35dae3c6e3f44046.jpg"
+        image: "./assets/certificate-2.png"
     },
     {
         title: "Analytics Master",
@@ -493,14 +493,14 @@ const certificates = [
         description: "Advanced certification in data analytics and visualization, focusing on actionable insights and reporting.",
         skills: ["Data Analysis", "Visualization", "Reporting", "Predictive Analytics"],
         projects: "Developed analytics frameworks for 25+ high-traffic websites",
-        image: "https://public.readdy.ai/ai/img_res/3d32f95cc407209797156c93a92c4f85.jpg"
+        image: "./assets/certificate-1.png"
     }
 ];
 function showCertificateDetails(index) {
     const cert = certificates[index];
     const content = `
 <div class="space-y-6">
-<img src="${cert.image}" alt="${cert.title}" class="w-full h-64 object-cover rounded-lg mb-6">
+<img src="${cert.image}" alt="${cert.title}" class="w-full h-[420px] object-cover rounded-lg mb-6">
 <div class="flex items-center justify-between">
 <h3 class="text-2xl font-bold">${cert.title}</h3>
 <div class="flex items-center gap-2">
