@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+        .headerimage{
+            border-radius: 10px;
+            padding: 20px;
+            background-color: aliceblue;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-delay: 1s;
+
+        }
+        body{
+            background-color: slateblue;
+        }
+
+        @keyframes example {
+            0%{
+                transform: translate(-180%, 100%)
+            }
+            
+        }
+
+        h1{
+            background-image: linear-gradient(to right, green, lightgreen);
+            background-clip: text;
+            color: transparent;
+        }
+
+    </style>
+    
+</head>
+<body class="flex items-center justify-center h-screen">
+    <div class="w-10/12 gap-10 grid grid-cols-2">
+        <div class="mb-8">
+            <h1 class="font-bold text-4xl bg-clip-text ">Welcome to my homepage</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente odio eveniet beatae ea quia, ipsum odit nemo blanditiis adipisci nulla. Quidem porro autem delectus expedita similique voluptas ullam voluptatem necessitatibus?</p>
+        </div>
+        <div  class="headerimage">
+            <img src="https://media.istockphoto.com/id/538449165/photo/beautiful-cloudscape-over-the-sea-sunset-shot.jpg?s=612x612&w=0&k=20&c=XwieRIV5Df3Azuk8tH3CnAlLA-GO5GBE7R7dKtb1POw=" alt="" class="w-full">
+        </div>
+    </div>
+</body>
+</html>
