@@ -48,13 +48,13 @@ document.addEventListener('DOMContentLoaded', function () {
 // Script for Hero Section
 
 document.addEventListener('DOMContentLoaded', function () {
-    const texts = ['an SEO Consultant', 'a Keyword Researcher Specialist', 'an On-Page SEO Strategist', 'a Technical SEO Expert', 'a Link building specialist', 'a Content Optimization Expert'];
+    const texts = ['an SEO Consultant', 'a Keyword Researche Specialist', 'an On-Page SEO Strategist', 'a Technical SEO Expert', 'a Link building specialist', 'a Content Optimization Expert'];
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
     const typingDelay = 100;
     const erasingDelay = 50;
-    const newTextDelay = 2000;
+    const newTextDelay = 1200;
     const typingElement = document.querySelector('.typing-text');
     function type() {
         const currentText = texts[textIndex];
